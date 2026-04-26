@@ -97,6 +97,82 @@
       <h2>Contacto</h2>
       <p>Si deseas escribirme, puedes hacerlo al correo <a href="mailto:estudiante@example.com">estudiante@example.com</a>.</p>
       <p>También puedes visitar <a href="https://developer.mozilla.org" target="_blank">un recurso de apoyo sobre desarrollo web</a>.</p>
+      <p>Si prefieres que te escriba, dejame tus datos</p>
+      <form action="resultado.html" method="get">
+        <label for="nombre">Nombre Completo</label>
+        <input
+          type="text"
+          id="nombre"
+          name="nombre"
+          placeholder="Nombre completo"
+          required
+        >
+
+        <label for="correo">Correo electrónico</label>
+        <input type="email" id="correo" name="correo" placeholder="nombre@usuario.com" required>
+
+        <label for="clave">Contraseña</label>
+        <input type="password" id="clave" name="clave" required>
+
+        <label for="fecha">Fecha de inscripción</label>
+        <input type="date" id="fecha" name="fecha_inscripcion">
+
+        <label for="horario">Horario preferido</label>
+        <select id="horario" name="horario" required>
+          <option value="">Seleccione una opción</option>
+          <option value="maniana">Mañana</option>
+          <option value="tarde">Tarde</option>
+          <option value="noche">Noche</option>
+        </select>
+        <button type="submit">Enviar</button>
+      </form>
+
+      <fieldset>
+        <legend>Nivel actual</legend>
+
+        <label>
+          <input type="radio" name="nivel" value="basico" required>
+          Básico
+        </label>
+
+        <label>
+          <input type="radio" name="nivel" value="intermedio">
+          Intermedio
+        </label>
+
+        <label>
+          <input type="radio" name="nivel" value="avanzado">
+          Avanzado
+        </label>
+      </fieldset>
+
+  <fieldset>
+  <legend>Temas de interés</legend>
+    <label>
+      <input type="checkbox" name="intereses" value="html">
+      HTML
+    </label>
+
+    <label>
+      <input type="checkbox" name="intereses" value="css">
+      CSS
+    </label>
+
+    <label>
+      <input type="checkbox" name="intereses" value="formularios">
+      Formularios
+    </label>
+  </fieldset>
+
+<label for="mensaje">Mensaje</label>
+  <textarea
+    id="mensaje"
+    name="mensaje"
+    rows="10"
+    placeholder="Querido diario... "
+  ></textarea>
+
+
       <p><a href="#inicio">Volver al inicio</a></p>
     </section>
   </main>
