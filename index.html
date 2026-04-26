@@ -3,68 +3,108 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi primera pagina web (aunque ya hice una app)</title>
+  <title>Mi perfil en la web</title>
 </head>
 <body>
-<a href="about.html">Sobre mí</a>
-  <h1>Mi primera pagina web (aunque ya hice una app)</h1>
-  <p>Este es mi primer documento HTML</p>
-  <h2>En que lenguajes he hecho apps</h2>
-  <ul>
-    <li>Python</li>
-    <li>Ruby</li>
-    <li>Jython</li>
-    <li>React</li>
-  </ul>
-  <h2>Como hago una app</h2>
-    <ol>
-      <li>primero pienso</li>
-      <li>diseño el dominio</li>
-      <li>hago el diseño ER para bd</li>
-      <li>Programo el back</li>
-      <li>ideo el front</li>
-      <li>Programo el front</li>
-      <li>Despliego</li>
-    </ol>
 
-  <h2>Tecnoligas de interes en este curso</h2>
-  <ul>
-    <li>FrontEnd
+  <header id="inicio">
+    <h1>Mi perfil en la web</h1>
+    <p>Una página básica construida para aprender organización de contenido en HTML.</p>
+  </header>
+
+  <nav>
+    <a href="#sobre-mi">Sobre mí</a> |
+    <a href="#intereses">Intereses</a> |
+    <a href="#plan">Plan de aprendizaje</a> |
+    <a href="#horario">Horario</a> |
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <main>
+    <section id="sobre-mi">
+      <h2>Sobre mí</h2>
+      <p>Me encuentro estudiando <strong>programación web básica</strong> y estoy aprendiendo a construir páginas claras y ordenadas.</p>
+      <p>Uno de mis objetivos principales es comprender cómo se organiza correctamente la información dentro de un documento HTML.</p>
+      <img src="img/foto-perfil.jpg" alt="Foto de perfil del estudiante">
+    </section>
+
+    <section id="intereses">
+      <h2>Mis intereses</h2>
       <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
+        <li>Desarrollo web</li>
+        <li>Lectura</li>
+        <li>Deporte</li>
+        <li>Tecnología</li>
       </ul>
-    </li>
-    <li>Herramientas
+
+      <h3>Áreas que quiero explorar</h3>
       <ul>
-        <li>Visual Studio Code</li>
-        <li>Navegador</li>
+        <li>Frontend
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+        </li>
+        <li>Buenas prácticas
+          <ul>
+            <li>Orden del código</li>
+            <li>Estructura semántica</li>
+            <li>Claridad del contenido</li>
+          </ul>
+        </li>
       </ul>
-    </li>
-  </ul>
+    </section>
 
-  <p>Es importante <mark><strong>guardar el archivo</strong></mark> antes de abrirlo en el navegador, asi los cambios serán visibles.</p>
+    <section id="plan">
+      <h2>Plan de aprendizaje</h2>
+      <ol>
+        <li>Comprender la estructura básica de HTML</li>
+        <li>Aprender a organizar contenido con listas y secciones</li>
+        <li>Insertar imágenes y crear enlaces</li>
+        <li>Construir formularios</li>
+        <li>Aplicar estilos con CSS</li>
+      </ol>
+    </section>
 
-  <p>Debes revisar con <em>mucho cuidado</em> el cierre de las etiquetas.</p>
+    <section id="horario">
+      <h2>Horario de práctica</h2>
+      <table border="1">
+        <tr>
+          <th>Día</th>
+          <th>Actividad</th>
+          <th>Duración</th>
+        </tr>
+        <tr>
+          <td>Lunes</td>
+          <td>Lectura y repaso de HTML</td>
+          <td>1 hora</td>
+        </tr>
+        <tr>
+          <td>Miércoles</td>
+          <td>Ejercicios prácticos</td>
+          <td>2 horas</td>
+        </tr>
+        <tr>
+          <td>Viernes</td>
+          <td>Mejora del proyecto</td>
+          <td>1.5 horas</td>
+        </tr>
+      </table>
+    </section>
 
-  <h2>Holi, si soy</h2>
-  <img src="img/perfil.jpg" alt="imagen de perfil.">
-  <img src="logo.webp" alt="logo">
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p>Si deseas escribirme, puedes hacerlo al correo <a href="mailto:estudiante@example.com">estudiante@example.com</a>.</p>
+      <p>También puedes visitar <a href="https://developer.mozilla.org" target="_blank">un recurso de apoyo sobre desarrollo web</a>.</p>
+      <p><a href="#inicio">Volver al inicio</a></p>
+    </section>
+  </main>
 
-  <p>Este es el peak del dibujo</p>
-  <img src="https://i.imgflip.com/8my9p1.jpg" alt="el peak del dibujo.">
-<br>
-  <a href="https://salsasaderezos.com/blogs/recetas/arroz-con-huevo-y-platano-maduro">Esta receta es un manjar de los dioses...</a>
-
-  <a href="https://developer.mozilla.org">
-    <img src="MDN.png" alt="">
-  </a>
-
-  <a href="mailto:sanmesaserna@gmail.com">Enviale un mensaje de correo al profe</a>
-
-  <h2 id="contacto">Aqui me contactas, no te demores... no tengo tiempo para perder...
-  </h2>
+  <footer>
+    <hr>
+    <p><small>Página de práctica académica elaborada en HTML.</small></p>
+  </footer>
 
 </body>
 </html>
